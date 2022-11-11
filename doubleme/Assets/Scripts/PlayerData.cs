@@ -109,7 +109,7 @@ public class PlayerData
     // Will add missions until we reach 2 missions.
     public void CheckMissionsCount()
     {
-        while (missions.Count < 2)
+        while (missions.Count < 3) // 초기 미션개수 추가 (task 1번)
             AddMission();
     }
 
