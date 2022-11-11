@@ -36,6 +36,7 @@ Transform:
   - {fileID: 4000011953386096}
   - {fileID: 4000011250848998}
   - {fileID: 4000012985580144}
+  - {fileID: 4388494395221444839}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78,7 +79,7 @@ MonoBehaviour:
   - {fileID: 114000010124067434}
   - {fileID: 114000013004132168}
   - {fileID: 114000012881478878}
-  - {fileID: 3876676901417313704}
+  - {fileID: 1968042353852585892}
   animator: {fileID: 9501716}
   icon: {fileID: 21300054, guid: e1a536f74c7ef384a8d7132148ace0c8, type: 3}
   jumpSound: {fileID: 8300000, guid: 819da6b208e0c0342b38dbbba363b740, type: 3}
@@ -407,7 +408,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000012383427076}
   - component: {fileID: 137000010249369434}
-  - component: {fileID: 3876676901417313704}
   m_Layer: 0
   m_Name: CatMesh
   m_TagString: Untagged
@@ -483,22 +483,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0000333637, y: 0.5705161, z: -0.09493807}
     m_Extent: {x: 0.46297145, y: 0.61328936, z: 0.35190415}
   m_DirtyAABB: 0
---- !u!114 &3876676901417313704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012190401862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d3602e240a7c92419a5f52841329955, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  accessoryName: REDSMART
-  cost: 22000
-  premiumCost: 100
-  accessoryIcon: {fileID: 21300034, guid: e1a536f74c7ef384a8d7132148ace0c8, type: 3}
 --- !u!1 &1000012411482616
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,3 +585,51 @@ MonoBehaviour:
   cost: 1500
   premiumCost: 5
   accessoryIcon: {fileID: 21300014, guid: e1a536f74c7ef384a8d7132148ace0c8, type: 3}
+--- !u!1 &5093480842106265156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4388494395221444839}
+  - component: {fileID: 1968042353852585892}
+  m_Layer: 0
+  m_Name: RedsMart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4388494395221444839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5093480842106265156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 465740}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1968042353852585892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5093480842106265156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3602e240a7c92419a5f52841329955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accessoryName: REDSMART
+  cost: 22000
+  premiumCost: 100
+  accessoryIcon: {fileID: 21300034, guid: e1a536f74c7ef384a8d7132148ace0c8, type: 3}
